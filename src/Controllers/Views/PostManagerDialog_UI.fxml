@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Views.PostManagerDialog_Controller">
+   <children>
+      <TextField fx:id="subject_TextField" editable="false" layoutX="61.0" layoutY="46.0" prefHeight="26.0" prefWidth="478.0" />
+      <TextArea fx:id="content_TextField" editable="false" layoutX="61.0" layoutY="84.0" prefHeight="128.0" prefWidth="478.0" wrapText="true" />
+      <HBox layoutX="319.0" layoutY="221.0" spacing="20.0">
+         <children>
+            <Button fx:id="dislike_Button" mnemonicParsing="false" onAction="#onHandleDislike" prefHeight="26.0" prefWidth="100.0" text="Dislike" />
+            <Button fx:id="like_Button" mnemonicParsing="false" onAction="#onHandleLike" prefHeight="26.0" prefWidth="100.0" text="Like" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

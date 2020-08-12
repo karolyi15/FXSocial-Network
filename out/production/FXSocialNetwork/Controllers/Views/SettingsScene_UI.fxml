@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Views.SettingsScene_Controller">
+   <children>
+      <Label layoutX="47.0" layoutY="45.0" text="User Information:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <GridPane layoutX="47.0" layoutY="90.0" prefHeight="90.0" prefWidth="415.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Email:" GridPane.rowIndex="1" />
+            <Label fx:id="email_Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Name:" />
+            <Label fx:id="name_Label" text="Label" GridPane.columnIndex="1" />
+            <Label text="Country:" GridPane.rowIndex="2" />
+            <Label fx:id="country_Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label layoutX="47.0" layoutY="208.0" text="Options:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="220.0" />
+      <Label fx:id="deleteAccount_Label" layoutX="47.0" layoutY="241.0" text="Delete Account" AnchorPane.topAnchor="250.0" />
+   </children>
+</AnchorPane>
