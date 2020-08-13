@@ -223,7 +223,7 @@ public class FXSNServer extends MultiThreadedServer{
         outputJson.put("Content", content);
         outputJson.put("Likes", 0);
         outputJson.put("Dislikes", 0);
-        outputJson.put("Type", "Message");
+        outputJson.put("Type", "MESSAGE");
 
         return outputJson;
     }
@@ -236,7 +236,7 @@ public class FXSNServer extends MultiThreadedServer{
 
             JSONObject userData = (JSONObject) this.dataBase.query("Users", username).clone();
 
-            if(userData == null){
+            if(userData == null || userData.get("AccountType").equals("NORMAL")){
 
                 outputJson.put("RequestState", false);
                 return outputJson;
